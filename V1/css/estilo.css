@@ -1,0 +1,95 @@
+/* Luis C Marzal */
+
+/* Estilo barra de navegación */
+nav{
+    width: 95%; 
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nav ul{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+}
+
+nav ul li{
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 10px;
+    width: 25%;
+}
+
+nav ul li a{
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #03e9f4;
+    transition: 0.5s;
+    width: 100%;
+}
+
+
+nav ul li a:hover{
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+
+/* Estilo contenedor centro de pantalla */
+
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor div {
+    display: flex;
+    width: max-content;
+    flex-wrap: wrap;
+    width: 720px;
+}
+
+.contenedor div .caja{
+    height: 150px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 14px;
+    flex-shrink: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contenedor div .caja img{
+    max-height: 150px;
+    max-width: 150px;
+    margin: auto;
+}

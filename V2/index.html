@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Subida de imágenes</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/estiloLogin.css">
+        <link rel="stylesheet" href="./css/estilo.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Subir imágenes</a>
+                </li>
+                <li>
+                    <a href="mostrarG.php">Mostrar Galería</a>
+                </li>
+                <li>
+                    <a href="mostrarN.php">Mostrar Nombres</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Formulario para subida de imágenes -->
+        <div class="login-box">
+            <h2>Subir Imágenes</h2>
+            <form enctype="multipart/form-data" action="subida.php" method="POST">
+                <div class="user-box">
+                    <input type="file" name="fichero" required=""> 
+                    <!-- Para controlar el tipo de archivo desde el formulario, 
+                        podemos poner accept="image/png, image/jpeg" -->
+                    <label>Imagen:</label>
+                </div>
+                
+                <input type="reset" class="boton">
+                <input type="submit" value="Enviar" class="boton">
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
